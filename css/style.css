@@ -1,14 +1,19 @@
 *{
     margin: 0;
 }
+:root{
+    --cor1: #EB8338;
+    --cor2: #EBBF38;
+    --cor3: #EBDBBF;
+}
 body{
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 550;
 }
 .head{
-    height: 75px;
+    height: 65px;
     cursor: default;
-    background: linear-gradient(#EB8E38, #EBBF38);
+    background: linear-gradient(var(--cor1), var(--cor2));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +23,11 @@ font-weight: 550;
     z-index: 10;
 }
 .headBottom{
-    height: 50px;
+    height: 25px;
     width: 100%;
-    background: linear-gradient(#EBBF38, #EBDBBF);
+    background: linear-gradient(var(--cor2), var(--cor3));
     position: sticky;
-    top: 75px;
+    top: 65px;
     z-index: 9;
 }
 p{
@@ -31,20 +36,23 @@ p{
 }
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 37px;
 }
 @media screen and (max-width: 382px){
     .title{
-        font-size: 35px;
+        font-size: 30px;
+    }
+    #subtitulo{
+        font-size: 25px;
     }
 }
 .fundo{
-    background-color: #EBDBBF;
+    background-color: var(--cor3);
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .fundo2{
-    background-color: #EBDBBF;
+    background-color: var(--cor3);
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -80,7 +88,6 @@ margin-top: -70px;
 }
 #lista{
     margin-top: 50px;
-    margin-left: 100px;
 }
 #centro{
 display: flex;
@@ -90,4 +97,57 @@ justify-content: center;
 .paragrafo{
     margin-left: 25px;
     display: inline;
+}
+#slider{
+    display: flex;
+    width: 300px;
+    height: 216px;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+}
+#slider img{
+    scroll-snap-align: start;
+}
+#slider-nav{
+    display: flex;
+    gap: 10px;
+}
+#slider-nav a{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    border: 1.5px black solid;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo:hover{
+    animation: giro 250ms ease-in-out;
+}
+@keyframes giro{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: var(--cor3);
+    border-top: 1.5px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: small;
+}
+#fam{
+    border-radius: 10px;
 }

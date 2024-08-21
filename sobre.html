@@ -11,9 +11,9 @@
 <body>
   <main class="tudo">
     <section class="head">
-      <img class="logo1" src="img/Pitico-logo.png" alt="Logo da Pitico Pet. Um cachorro de óculos escuros." draggable="false">
+      <img class="logo" src="img/Pitico-logo.png" alt="Logo da Pitico Pet. Um cachorro de óculos escuros." draggable="false" width="60px">
       <h1 class="title">Pitico Pet</h1>
-      <img class="logo2" src="img/Pitico-logo.png" alt="Logo da Pitico Pet. Um cachorro de óculos escuros." draggable="false">
+      <img class="logo" src="img/Pitico-logo.png" alt="Logo da Pitico Pet. Um cachorro de óculos escuros." draggable="false" width="60px">
     </section>
     <div class="headBottom"></div>
     <section class="fundo">
@@ -32,8 +32,18 @@
         satisfação e confiança dos nossos clientes.
         </p>
         <figure>
-        <img src="img/centro-distribuicao.jpg" alt="Imagem aérea do nosso centro de Distribuição em São Paulo" draggable="false">
-        <figcaption>Imagem aérea do nosso centro de Distribuição em São Paulo</figcaption>
+          
+        <div id="slider">
+          <img src="img/centro-distribuicao.jpg" alt="Imagem aérea do nosso centro de Distribuição em São Paulo" draggable="false" id="slide1">
+          <img src="img/depósito2.png" alt="Imagem aérea do nosso centro de Distribuição em São Paulo" draggable="false" id="slide2">
+          <img src="img/deposito3.jpeg" alt="Imagem aérea do nosso centro de Distribuição em São Paulo" draggable="false" id="slide3">
+        </div>
+        <div id="slider-nav">
+          <a href="#slide1"></a>
+          <a href="#slide2"></a>
+          <a href="#slide3"></a>
+        </div>
+        <figcaption>Imagens do nosso centro de Distribuição em São Paulo</figcaption>
         </figure>
         <div id="centro">
       <p>Compre as roupas e acessórios para o seu bichinho de estimação na
@@ -44,7 +54,7 @@
       <h2 id="História"><u>História</u></h2>
       <figure>
       
-        <img src="img/familia-nascimentoP.jpg" alt="Foto da Família Nascimento" draggable="false">
+        <img src="img/familia-nascimentoP.jpg" alt="Foto da Família Nascimento" draggable="false" id="fam">
         <figcaption>Foto da Família Nascimento</figcaption>
       </figure>
       
@@ -97,5 +107,8 @@
         </div>
     </section>
   </main>
+  <footer>
+    <p>Lucca Stern Bianchi e Murilo Queiroz Cardoso</p>
+  </footer>
 </body>
 </html>
