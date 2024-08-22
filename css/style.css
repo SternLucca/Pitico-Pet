@@ -1,15 +1,19 @@
+/* Tira a mergem da página */
 *{
     margin: 0;
 }
+/* Cria as variáveis */
 :root{
     --cor1: #EB8338;
     --cor2: #EBBF38;
     --cor3: #EBDBBF;
 }
+/* Configura o corpo */
 body{
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 550;
 }
+/* Configura cabeçalho */
 .head{
     height: 65px;
     cursor: default;
@@ -22,6 +26,7 @@ font-weight: 550;
     top: 0;
     z-index: 10;
 }
+/* Espaçamento entre cabeçalho e página */
 .headBottom{
     height: 25px;
     width: 100%;
@@ -30,14 +35,17 @@ font-weight: 550;
     top: 65px;
     z-index: 9;
 }
+/* Configura os textos da página */
 p{
     cursor: default;
     text-align: justify;
 }
+/* Configura o título */
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 37px;
 }
+/* Adiciona responsividade */
 @media screen and (max-width: 382px){
     .title{
         font-size: 30px;
@@ -46,22 +54,26 @@ p{
         font-size: 25px;
     }
 }
+/* Adiciona cor no fundo e define fonte e espaçamento */
 .fundo{
     background-color: var(--cor3);
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Adiciona cor no fundo e define fonte e espaçamento */
 .fundo2{
     background-color: var(--cor3);
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Configura os Subtítulos */
 h2{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     cursor: default;
 }
+/* configura o subtítulo da página */
 #subtitulo{
     position: absolute;
     right: 50%;
@@ -69,7 +81,7 @@ h2{
     transform: translate(50%, 0);
     cursor: default;
 }
-
+/* Configura as imagens */
 figure{
     display: flex;
     align-items: center;
@@ -77,27 +89,33 @@ figure{
     flex-direction: column;
     margin: 20px;
 }
+/* Margem nas imagens */
 figure > img{
     margin: 15px;
 }
+/* Tamanho da margem dos subtítulos */
 h2{
     margin-top: 20px;
 }
+/* Joga um parágrafo pra cima */
 #gap{
 margin-top: -70px;
 }
+/* Afasta a lista do subtítulo */
 #lista{
     margin-top: 50px;
 }
+/* Centraliza um texto */
 #centro{
 display: flex;
 align-items: center;
 justify-content: center;
 }
+/* adiciona um espacinho antes de cada parágrafo */
 .paragrafo{
     margin-left: 25px;
     display: inline;
-}
+}/* Div do carrosel de imagens */
 #slider{
     display: flex;
     width: 300px;
@@ -107,13 +125,16 @@ justify-content: center;
     scroll-behavior: smooth;
     border-radius: 10px;
 }
+/* Imagens do Carrosel de Imagens */
 #slider img{
     scroll-snap-align: start;
 }
+/* Botões do Carrosel de Imagens */
 #slider-nav{
     display: flex;
     gap: 10px;
 }
+/* Botões do Carrosel de Imagens */
 #slider-nav a{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -124,12 +145,15 @@ justify-content: center;
     opacity: 0.75;
     border: 1.5px black solid;
 }
+/* O efeito de Scroll fica mais bonito */
 html{
     scroll-behavior: smooth;
 }
+/* Animação da Logo */
 .logo:hover{
     animation: giro 250ms ease-in-out;
 }
+/* Animação da Logo */
 @keyframes giro{
     from{
         transform: rotate(0deg);
@@ -138,6 +162,7 @@ html{
         transform: rotate(360deg);
     }
 }
+/* Adiciona estilo ao rodapé */
 footer{
     display: flex;
     align-items: center;
@@ -148,6 +173,7 @@ footer{
     color: rgba(0, 0, 0, 0.8);
     font-size: small;
 }
+/* Arredonda as bordas da imagem da família */
 #fam{
     border-radius: 10px;
 }
