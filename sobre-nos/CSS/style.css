@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --cor1: #f98b3c;
+    --cor2: #fdd295;
+    --cor3: #EBDBBF;
+    --cor4: #f98d3f;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(var(--cor4), var(--cor3));
+}
+p{
+    cursor: default;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h2{
+    cursor: default;
+}
+h1{
+    cursor: default;
+}
+header{
+    height: 75px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor1);
+    font-family: "Delius", cursive;
+    gap: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+    z-index: 10;
+}
+#menu{
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    position: fixed;
+    left: 40px;
+}
+#menu:hover{
+    left: 35px;
+    font-size: 50px;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+.logo:hover{
+    animation: giro 500ms;
+}
+main{
+    display: flex;
+}
+aside{
+    display: none;
+    width: 100%;
+    max-width: 120px;
+    height: calc(100vh - 75px);
+    background: linear-gradient(var(--cor4), var(--cor2));
+    position: sticky;
+    top: 75px;
+    z-index: 9;
+    box-shadow: 1px 1px 10px 1px black;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.option{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+.option:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#op1{
+    margin-top: 20px;
+}
+article{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+figure{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+#fam{
+    margin-bottom: 10px;
+}
+footer{
+    border-top: 1px solid dimgray;
+    height: 50px;
+    width: 100%;
+    color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes giro {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
