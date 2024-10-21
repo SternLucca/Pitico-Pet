@@ -116,6 +116,31 @@ footer{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 440px){
+    h1{
+        font-size: x-large;
+    }
+    .logo{
+        width: 45px;
+    }
+    #menu{
+        font-size: 35px;
+        left: 30px;
+    }
+    aside{
+        position: fixed;
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 360px){
+    .logo{
+        display: none;
+    }
+    #menu{
+        font-size: 30px;
+        left: 25px;
+    }
+}
 @keyframes giro {
     from{
         rotate: 0deg;
