@@ -120,11 +120,6 @@ footer{
 #foto-fam2{
     display: none;
 }
-.offcanvas{
-    width: 100%;
-    max-width: 150px;
-    
-}
 @media screen and (max-width: 768px) {
     #foto-fam{
         display: none;

@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --cor1: #f98b3c;
+    --cor1: #ff9a51;
     --cor2: #fdd295;
     --cor3: #EBDBBF;
     --cor4: #f98d3f;
@@ -66,11 +66,12 @@ aside{
     width: 100%;
     max-width: 120px;
     height: calc(100vh - 75px);
-    background: linear-gradient(var(--cor4), var(--cor2));
     position: sticky;
     top: 75px;
     z-index: 9;
     box-shadow: 1px 1px 10px 1px black;
+    background: linear-gradient(var(--cor1), var(--cor3));
+
 }
 nav{
     display: flex;
@@ -94,9 +95,8 @@ article{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(var(--cor4), var(--cor3));
     width: 100%;
-    height: 100vh;
+    background-color: bisque;
 }
 
 
@@ -110,6 +110,7 @@ article{
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid black;
+    gap: 100px;
 }
 .produto{
     width: 200px;
@@ -120,6 +121,19 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
+}
+.contador{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: red;
+    position: fixed;
+    right: 15px;
+    top: 10px;
 }
 @keyframes fl1{
     30%{
