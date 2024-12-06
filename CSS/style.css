@@ -1,32 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --cor1: #ff9a51;
     --cor2: #fdd295;
     --cor3: #EBDBBF;
     --cor4: #f98d3f;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-p{
+
+p {
     cursor: default;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-h2{
+
+h2 {
     cursor: default;
 }
-h1{
+
+h1 {
     cursor: default;
 }
-header{
+
+header {
     height: 75px;
     width: 100%;
     position: sticky;
@@ -40,28 +48,34 @@ header{
     box-shadow: 1px 1px 10px 1px black;
     z-index: 10;
 }
-#menu{
+
+#menu {
     font-size: 40px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
     position: fixed;
     left: 40px;
 }
-#menu:hover{
+
+#menu:hover {
     left: 35px;
     font-size: 50px;
 }
-.logo{
+
+.logo {
     width: 60px;
     cursor: pointer;
 }
-.logo:hover{
+
+.logo:hover {
     animation: giro 500ms;
 }
-main{
+
+main {
     display: flex;
 }
-aside{
+
+aside {
     display: none;
     width: 100%;
     max-width: 120px;
@@ -73,24 +87,29 @@ aside{
     background: linear-gradient(var(--cor1), var(--cor3));
 
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: column;
 }
-.option{
+
+.option {
     width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
 }
-.option:hover{
+
+.option:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-#op1{
+
+#op1 {
     margin-top: 20px;
 }
-article{
+
+article {
     padding: 30px;
     display: flex;
     align-items: center;
@@ -100,10 +119,11 @@ article{
 }
 
 
-.text-center{
+.text-center {
     animation: fl1 3s infinite linear;
 }
-.produtos{
+
+.produtos {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +132,8 @@ article{
     border: 1px solid black;
     gap: 100px;
 }
-.produto{
+
+.produto {
     width: 200px;
     height: 350px;
     background-color: white;
@@ -123,7 +144,8 @@ article{
     justify-content: center;
     flex: 1;
 }
-.contador{
+
+.contador {
     display: none;
     align-items: center;
     justify-content: center;
@@ -135,20 +157,40 @@ article{
     right: 15px;
     top: 10px;
 }
-@keyframes fl1{
-    30%{
+.offcanvas-body {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: bisque;
+}
+
+.offcanvas-header {
+    background-color: bisque;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 350px) {
+
+    .offcanvas-header>h3 {
+        margin-left: 125px;
+    }
+}
+
+@keyframes fl1 {
+    30% {
         transform: translateY(10%) rotate(4deg);
     }
-    70%{
+
+    70% {
         transform: translateY(10%) rotate(-4deg);
     }
 }
 
 @keyframes giro {
-    from{
+    from {
         rotate: 0deg;
     }
-    to{
+
+    to {
         rotate: 360deg;
     }
 }

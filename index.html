@@ -25,11 +25,12 @@
         <img src="img/Pitico-logo.png" alt="Logo da Pitico Pet" draggable="false" width="60px" class="logo">
         <h1>Pitico Pet</h1>
         <img src="img/Pitico-logo.png" alt="Logo da Pitico Pet" draggable="false" width="60px" class="logo">
-        <span class="material-symbols-outlined" style="font-size: 50px; position: fixed; right: 20px; cursor: pointer;">
+        <span class="material-symbols-outlined" style="font-size: 50px; position: fixed; right: 20px; cursor: pointer;" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             shopping_cart
         </span>
         <div class="contador"></div>
-        
+
     </header>
     <main>
         <aside>
@@ -91,6 +92,18 @@
                     <h6>Cama para Gatos</h6>
                     <h6>R$ 300,00</h6>
                     <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrinho</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h6 id="total">Total: R$ 00,00</h6>
+                    <hr>
                 </div>
             </div>
         </article>
