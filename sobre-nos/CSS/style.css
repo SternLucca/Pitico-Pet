@@ -20,6 +20,7 @@ p{
     cursor: default;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: justify;
 }
 h2{
     cursor: default;
@@ -115,6 +116,24 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#foto-fam2{
+    display: none;
+}
+.offcanvas{
+    width: 100%;
+    max-width: 150px;
+    
+}
+@media screen and (max-width: 768px) {
+    #foto-fam{
+        display: none;
+    }
+    #foto-fam2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 440px){
     h1{
