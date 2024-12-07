@@ -39,102 +39,77 @@ menu.addEventListener('click', () => {
         isShown = true;
     }
 });
-const prod = createElement('p', `prod`);
+let j = 0;
+const prod = (j) => {
+    const prod = createElement('p', 'prod');
+    prod.innerHTML = `${produtos[j]} R$ ${precos[j]},00`;
+    return prod;
+};
 const totalHTML = document.querySelector('#total');
-let contProd = [0, 0, 0, 0, 0, 0, 0, 0];
 btn1.addEventListener('click', () => {
     console.log('teste');
     cont++;
-    contProd[0]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[0];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[0]} x ${produtos[0]} R$ ${precos[0]},00`;
+    carrinho.append(prod(0));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn2.addEventListener('click', () => {
     console.log('teste');
     cont++;
-    contProd[1]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[1];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[1]} x ${produtos[1]} R$ ${precos[1]},00`;
+    carrinho.append(prod(1));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn3.addEventListener('click', () => {
     console.log('teste');
     cont++;
-    contProd[2]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[2];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[2]} x ${produtos[2]} R$ ${precos[2]},00`;
+    carrinho.append(prod(2));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn4.addEventListener('click', () => {
-    console.log('teste');
     cont++;
-    contProd[3]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[3];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[3]} x ${produtos[3]} R$ ${precos[3]},00`;
+    carrinho.append(prod(3));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn5.addEventListener('click', () => {
-    console.log('teste');
     cont++;
-    contProd[4]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[4];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[4]} x ${produtos[4]} R$ ${precos[4]},00`;
+    carrinho.append(prod(4));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn6.addEventListener('click', () => {
-    console.log('teste');
     cont++;
-    contProd[5]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[5];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[5]} x ${produtos[5]} R$ ${precos[5]},00`;
+    carrinho.append(prod(5));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn7.addEventListener('click', () => {
-    console.log('teste');
     cont++;
-    contProd[6]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[6];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[6]} x ${produtos[6]} R$ ${precos[6]},00`;
+    carrinho.append(prod(6));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
 btn8.addEventListener('click', () => {
-    console.log('teste');
     cont++;
-    contProd[7]++;
     contador.style.display = "flex";
     contador.innerHTML = cont;
     total += precos[7];
-    carrinho.append(prod);
-    prod.innerHTML = `${contProd[7]} x ${produtos[7]} R$ ${precos[7]},00`;
+    carrinho.append(prod(7));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
-    total.innerHTML = `Total: R$ ${total},00`;
 });
