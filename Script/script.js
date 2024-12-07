@@ -21,8 +21,8 @@ const createElement = (tag, className = "") => {
 let i = 0, cont = 0;
 let total = 0;
 let isShown = false;
-let precos = [61, 61, 61, 61, 30, 10, 20, 300];
-let produtos = ["Ração Pedigree Adulto", "", "", "", "Condicionador Pet Clean", "Lenço Umedecido para Gatos", "Banho Seco para Gatos", "Cama para Gatos"];
+let precos = [61, 13, 120, 11, 30, 10, 20, 300];
+let produtos = ["Ração Pedigree Adulto", "Corda de Brinquedo", "Cama de Cachorro 70x70", "Petisco Dentastix Pedigree", "Condicionador Pet Clean", "Lenço Umedecido para Gatos", "Banho Seco para Gatos", "Cama para Gatos"];
 
 logo1.addEventListener('mouseenter', () => {
     latido.play();
@@ -113,3 +113,8 @@ btn8.addEventListener('click', () => {
     carrinho.append(prod(7));
     totalHTML.innerHTML = `Total: R$ ${total},00`;
 });
+
+function finished(){
+    window.alert("Obrigado por comprar conosco! Volte Sempre");
+    location.reload();
+}

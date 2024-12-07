@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <script src="Script/script.js" defer></script>
     <title>Pitico Pet</title>
 </head>
@@ -25,8 +26,9 @@
         <img src="img/Pitico-logo.png" alt="Logo da Pitico Pet" draggable="false" width="60px" class="logo">
         <h1>Pitico Pet</h1>
         <img src="img/Pitico-logo.png" alt="Logo da Pitico Pet" draggable="false" width="60px" class="logo">
-        <span class="material-symbols-outlined" style="font-size: 50px; position: fixed; right: 20px; cursor: pointer;" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <span class="material-symbols-outlined" style="font-size: 50px; position: fixed; right: 20px; cursor: pointer;"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
             shopping_cart
         </span>
         <div class="contador"></div>
@@ -45,50 +47,57 @@
 
             <div class="produtos">
                 <div class="produto rounded">
-                    <img src="img/ração.png" alt="">
+                    <img src="img/ração.png" draggable="false" alt="Ração Pedigree Adulto">
                     <p></p>
                     <h6>Ração Pedigree Adulto</h6>
                     <h6>R$ 61,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/corda.png" alt="">
+                    <img src="img/corda.png" alt="Corda de Brinquedo" draggable="false">
+                    <p></p>
                     <h6>Corda de Brinquedo</h6>
                     <h6>R$ 13,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/ração.png" alt="">
-                    <h6>Ração Pedigree Adulto</h6>
-                    <h6>R$ 61,00</h6>
+                    <img src="img/cama-dog.png" alt="Cama de Cachorro 70x70" draggable="false">
+                    <p></p>
+                    <h6>Cama de Cachorro 70x70</h6>
+                    <h6>R$ 120,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/ração.png" alt="">
-                    <h6>Ração Pedigree Adulto</h6>
-                    <h6>R$ 61,00</h6>
+                    <img src="img/petisco.png" alt="Petisco Dentastix Pedigree" draggable="false">
+                    <p></p>
+                    <h6>Petisco Dentastix Pedigree</h6>
+                    <h6>R$ 11,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/condicinador.png" alt="">
+                    <img src="img/condicinador.png" alt="Condicionador Pet Clean" draggable="false">
+                    <p></p>
                     <h6>Condicionador Pet Clean</h6>
                     <h6>R$ 30,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/lenço.png" alt="">
+                    <img src="img/lenço.png" alt="Lenço Umedecido para Gatos" draggable="false">
+                    <p></p>
                     <h6>Lenço Umedecido para Gatos</h6>
                     <h6>R$ 10,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/banho seco gato.png" alt="">
+                    <img src="img/banho seco gato.png" alt="Banho Seco para Gatos" draggable="false">
+                    <p></p>
                     <h6>Banho Seco para Gatos</h6>
                     <h6>R$ 20,00</h6>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
                 <div class="produto rounded">
-                    <img src="img/cama-gato.png" alt="">
+                    <img src="img/cama-gato.png" alt="Cama para Gatos" draggable="false">
+                    <p></p>
                     <h6>Cama para Gatos</h6>
                     <h6>R$ 300,00</h6>
                     <button class="btn btn-primary">Comprar</button>
@@ -102,7 +111,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <h6 id="total">Total: R$ 00,00</h6>
+                    <div id="totalArea">
+                        <h6 id="total">Total: R$ 00,00</h6>
+                        <div class="botoes">
+                            <button class="btn btn-primary" onclick="finished()">Finalizar</button>
+                            <a href="index.html"><button class="btn btn-outline-danger">Limpar</button></a>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </div>

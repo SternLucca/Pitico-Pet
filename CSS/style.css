@@ -129,7 +129,6 @@ article {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
     gap: 100px;
 }
 
@@ -163,13 +162,24 @@ article {
     background-color: bisque;
 }
 
+.offcanvas{
+    box-shadow: 0px 0px 100px 15px black;
+}
+
 .offcanvas-header {
-    background-color: bisque;
+    background-color: rgb(255, 218, 173);
     border-bottom: 1px solid black;
+    box-shadow: 0px 0px 20px 1px black;
+    z-index: 10;
+}
+
+#totalArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 350px) {
-
     .offcanvas-header>h3 {
         margin-left: 125px;
     }
