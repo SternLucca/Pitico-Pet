@@ -195,6 +195,34 @@ article {
     }
 }
 
+.cart{
+    font-size: 50px;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px){
+    .logo{
+        display: none;
+    }
+    #menu{
+        font-size: 30px;
+        left: 15px;
+    }
+    .cart{
+        right: 10px;
+        font-size: 30px;
+    }
+    .contador{
+        right: 4px;
+        top: 15px;
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
 @keyframes giro {
     from {
         rotate: 0deg;
