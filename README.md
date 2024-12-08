@@ -1,2 +1,3 @@
 # Pitico-Pet
- An website for a fictional pet shop called "Pitico Pet". School Project of IFSP.
+Um site paraum pet-shop fictício feito para um projeto da disciplina Prática de Laboratório do IFSP Campus Cubatão.
+Feito por: Lucca Ster Bianchi e Murilo Cardoso Queiroz
